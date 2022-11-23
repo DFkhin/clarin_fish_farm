@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-VariableFont_wght.ttf');
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(49, 111, 128), rgb(243, 243, 243));
+}
+
+.tab-container {
+    color: #fff;
+    /* background-color: #4e73df; */
+    background: linear-gradient(to bottom right, #496edc, #43af94);
+    border-color: #4e73df;
+  }
+
+  .bg-gradient {
+    color: #fff;
+    background-color: #4e73df;
+    background: linear-gradient(to bottom right, #474a48, #434443);
+    border-color: #4e73df;
+  }
+  .bg-blue {  
+    color: #fff;
+    background-color: #4e73df;
+    background: linear-gradient(to bottom right, #2859ba, #1ae048);
+    border-color: #4e73df;
+  }
+
+  .bg-gray {
+    color: #fff;
+    background-color: #4e73df;
+    background: linear-gradient(to bottom right, #5d5d5d, #606261);
+    border-color: #4e73df;
+  }
+
+  .bg-green {
+    color: #fff;
+    background-color: #4e73df;
+    background: linear-gradient(to bottom right, #0424f7, #02e4a8);
+    border-color: #4e73df;
+  }
+
+  .btn-green {
+        color: #fff;
+        background-color: #4e73df;
+        background: linear-gradient(to bottom right, #d6a503, #00e5ff);
+        border-color: #4e73df;
+  }
+
+  .btn-yellow {
+    color: #fff;
+    background: linear-gradient(to bottom right, #f5b505, #05eb0d);
+ 
+}
+
+  .bg-red {
+    color: #fff;
+    background-color: #4e73df;
+    background: linear-gradient(to bottom right, #fa2d2d, #f87903);
+    border-color: #4e73df;
+  }
+
+  .btn-primary {
+    color: #fff;  
+    background: linear-gradient(to bottom right, #1e54f7, #0baed3);
+  }
+
+.bfar-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, #f3f3f3 10%, #dddddd 100%);
+}
+
+#login-logo {
+    width: 50%;
+}
+
+.info-item {
+    display: inline-block;
+    margin-bottom: 14px;
+    margin-right: 14px;
+    font-size: 1.1em;
+    box-shadow: 1px 0 3px #777;
+    border-left: 4px solid #25533c;
+}
+
+.info-item>i{
+    background-color: #abf8d2;
+    padding: 0 8px 0 5px;
+    margin: 0;
+    border-right: 1px solid rgba(41, 58, 50, 0.356);
+}
+
+.info-item>span {
+    padding: 0px 14px 0 8px;
+    background-color: #e3f5ff;
+    font-weight: 600;
+    padding-right: 14px;
+}
+
+.bg-light-blue { background-color: #e3f5ff; }
+
+/* Overrides */
+
+
+.table, .form-control {
+    color: #555762;
+}
+
+.sidebar .nav-item .nav-link {
+    padding: 0.6rem;
+}
+
+#course-search-result {
+    position: absolute;
+    top:100%;
+    left:0;
+    width:500px;
+    max-height: 300px;
+    border: 1px solid rgb(170, 170, 170);
+    padding: 14px;
+    border-radius: 10px;
+    display: none;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 4px 10px #999;
+    z-index: 10;
+}
+
+#course-search-result div a.search-item {
+    display: block;
+    text-decoration: none;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#course-search-result div a.search-item:hover {
+    background-color: #dfdfdf;
+}
+
+#close-course-search-result {
+    cursor: pointer;
+}
+
+.day-picker label{
+    margin-right: 14px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(126, 28, 129, 0.6);
+    padding: 20px;
+    text-align: center;
+    color: rgb(187, 255, 0);
+}
+
+.tab-container {
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.small-box {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.small-box > .inner {
+  padding: 10px;
+}
+
+.small-box > .small-box-footer {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  padding: 3px 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  z-index: 10;
+}
+
+.small-box > .small-box-footer:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: #fff;
+}
+
+.small-box h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 10px;
+  padding: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 992px) {
+  .col-xl-2 .small-box h3,
+  .col-lg-2 .small-box h3,
+  .col-md-2 .small-box h3 {
+    font-size: 1.6rem;
+  }
+  .col-xl-3 .small-box h3,
+  .col-lg-3 .small-box h3,
+  .col-md-3 .small-box h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-2 .small-box h3,
+  .col-lg-2 .small-box h3,
+  .col-md-2 .small-box h3 {
+    font-size: 2.2rem;
+  }
+  .col-xl-3 .small-box h3,
+  .col-lg-3 .small-box h3,
+  .col-md-3 .small-box h3 {
+    font-size: 2.2rem;
+  }
+}
+
+.small-box p {
+  font-size: 1rem;
+}
+
+.small-box p > small {
+  color: #f8f9fa;
+  display: block;
+  font-size: .9rem;
+  margin-top: 5px;
+}
+
+.small-box h3,
+.small-box p {
+  z-index: 5;
+}
+
+.small-box .icon {
+  color: rgba(0, 0, 0, 0.15);
+  z-index: 0;
+}
+
+.small-box .icon > i {
+  font-size: 90px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.small-box .icon > i.fa, .small-box .icon > i.fas, .small-box .icon > i.far, .small-box .icon > i.fab, .small-box .icon > i.fal, .small-box .icon > i.fad, .small-box .icon > i.ion {
+  font-size: 70px;
+  top: 20px;
+}
+
+.small-box .icon svg {
+  font-size: 70px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+.small-box:hover {
+  text-decoration: none;
+}
+
+.small-box:hover .icon > i, .small-box:hover .icon > i.fa, .small-box:hover .icon > i.fas, .small-box:hover .icon > i.far, .small-box:hover .icon > i.fab, .small-box:hover .icon > i.fal, .small-box:hover .icon > i.fad, .small-box:hover .icon > i.ion {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.small-box:hover .icon > svg {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media (max-width: 767.98px) {
+  .small-box {
+    text-align: center;
+  }
+  .small-box .icon {
+    display: none;
+  }
+  .small-box p {
+    font-size: 12px;
+  }
+}
